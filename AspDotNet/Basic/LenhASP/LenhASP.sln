@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LenhASP", "LenhASP\LenhASP.csproj", "{D7887FF3-F6AA-427F-9B27-CF256C3D0282}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4B40A499-B690-4308-A7C0-091B5882153A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D7887FF3-F6AA-427F-9B27-CF256C3D0282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7887FF3-F6AA-427F-9B27-CF256C3D0282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7887FF3-F6AA-427F-9B27-CF256C3D0282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B40A499-B690-4308-A7C0-091B5882153A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B40A499-B690-4308-A7C0-091B5882153A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B40A499-B690-4308-A7C0-091B5882153A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B40A499-B690-4308-A7C0-091B5882153A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

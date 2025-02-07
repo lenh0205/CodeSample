@@ -1,8 +1,21 @@
-﻿
-using ConsoleApp1.Example;
+﻿using Aspose.OCR;
+using Aspose.OCR.Models.PreprocessingFilters;
+using Microsoft.VisualBasic;
 
-var reflection = new ReflectionCSharp();
-reflection.Run();
+class ThreadTest
+{
+    static void Main()
+    {
+        PreprocessingFilter filter = new PreprocessingFilter {
+            PreprocessingFilter.ContrastCorrectionFilter(),
+            PreprocessingFilter.AutoDewarping()
+        };
+        OcrInput photos = new OcrInput(InputType.SingleImage, filter);
+        photos.Add("photo.png");
 
-Console.ReadKey();
+        AsposeOcr api = new AsposeOcr();
+        List<RecognitionResult> result = api.Recognize(photos);
 
+        AsposeOcr.SaveMultipageDocument("test.pdf", SaveFormat.Pdf, result);
+    }
+}

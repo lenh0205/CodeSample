@@ -1,0 +1,6 @@
+services:
+  lenhasp:
+    image: ${DOCKER_REGISTRY-}lenhasp
+    build:
+      context: .
+      dockerfile: LenhASP/Dockerfile

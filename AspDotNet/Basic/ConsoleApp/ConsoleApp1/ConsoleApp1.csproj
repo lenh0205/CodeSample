@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aspose.OCR" Version="24.11.1" />
+  </ItemGroup>
+
 </Project>
